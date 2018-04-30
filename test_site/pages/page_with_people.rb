@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class TestPageWithPeople < SitePrism::Page
+class PageWithPeople < SitePrism::Page
   set_url '/page_with_people.htm'
 
   # sections

@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class TestHomePageWithExpectedElements < SitePrism::Page
+class HomePageWithExpectedElements < SitePrism::Page
   set_url '/home.htm'
   set_url_matcher(/home\.htm$/)
 

@@ -7,7 +7,7 @@ module SitePrism
     end
 
     def elements_present
-      mapped_items.select { |item_name| present?(item_name) }
+      mapped_items.select { |element| present?(element) }
     end
 
     private

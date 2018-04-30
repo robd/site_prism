@@ -2,19 +2,19 @@
 
 class TestSite
   def home
-    TestHomePage.new
+    HomePage.new
   end
 
   def home_with_expected_elements
-    TestHomePageWithExpectedElements.new
+    HomePageWithExpectedElements.new
   end
 
   def no_title
-    TestNoTitle.new
+    NoTitle.new
   end
 
   def dynamic_page
-    TestDynamicPage.new
+    DynamicPage.new
   end
 
   def redirect_page
@@ -22,10 +22,10 @@ class TestSite
   end
 
   def page_with_people
-    TestPageWithPeople.new
+    PageWithPeople.new
   end
 
   def section_experiments
-    TestSectionExperiments.new
+    SectionExperiments.new
   end
 end

@@ -68,6 +68,14 @@ Then('all elements marked as expected are present') do
   expect(@test_site.home_with_expected_elements).to be_all_there
 end
 
+Then('all mapped elements are present') do
+  expect(@test_site.section_experiments.elements_present).to eq(@test_site.section_experiments.class.mapped_items)
+end
+
+Then('not all mapped elements are present') do
+  expect(@test_site.home.elements_present).not_to eq(@test_site.home.class.mapped_items)
+end
+
 Then('an exception is raised when I try to deal with an element with no selector') do
   expect { @test_site.no_title.has_element_without_selector? }
     .to raise_error(SitePrism::NoSelectorForElement)
